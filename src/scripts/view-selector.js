@@ -41,6 +41,7 @@ const GroceryItem = React.createClass({
    },
 
    _handleToggle: function(){
+      // (3) the toggler
       if(this.state.inInventory === true){
          this.setState({inInventory: false})
       } else {
@@ -49,18 +50,20 @@ const GroceryItem = React.createClass({
    },
 
    render: function(){
-
+      
       let styleObj = {padding: '10px 5px', background: '#ddd', marginBottom: '4px', cursor: 'pointer'}
 
       if(this.state.inInventory === true){
          styleObj.background= 'cadetblue'
       }
 
+
+      {/*/(2) creating a click event on each Grocery Item that will
+              toggle the isInventory state for the item-element clicked
+         */}
+
       return <li onClick={this._handleToggle} style={styleObj}>{this.props.itemData.item}</li>
    }
 })
 
 module.exports = SelectViewComponent
-
-//(2) create a click event on each Grocery Item that will toggle the isInventory for the item clicked,
-//     HINT: you may need to use the `data` attribute
