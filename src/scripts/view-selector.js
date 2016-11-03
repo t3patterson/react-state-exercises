@@ -50,7 +50,7 @@ const GroceryItem = React.createClass({
    },
 
    render: function(){
-      
+
       let styleObj = {padding: '10px 5px', background: '#ddd', marginBottom: '4px', cursor: 'pointer'}
 
       if(this.state.inInventory === true){
