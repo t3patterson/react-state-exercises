@@ -27,7 +27,7 @@ const SelectPlusViewComponent = React.createClass({
 
          //  make an array copy
          let itemsCopy = self.state.itemsList.map((copy) => {return copy} )
-
+         let indexFoundAt
          // return the object in the array where .pid value matches
          let clickedObj = itemsCopy.find(function(itemObj, i ){
             indexFoundAt = i

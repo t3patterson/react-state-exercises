@@ -39,10 +39,10 @@ const AppRouter = Backbone.Router.extend({
 
    showHomeView: function(){
       document.querySelector( '#app-container').innerHTML = `
+      <h2 class="text-primary">React State Demos</h2>
       <a class='btn btn-primary' href="#counter">Counter Component</a> |
       <a class='btn btn-success' href="#select"> List Selector Component</a> |
-      <a class='btn btn-danger' href="#select-plus"> List Selector Component</a> |
-
+      <a class='btn btn-danger' href="#select-plus"> Component State Modifying Other Components</a> |
       `
    },
 
